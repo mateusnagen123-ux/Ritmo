@@ -176,7 +176,7 @@ const NOMES = ['domingo','segunda','terça','quarta','quinta','sexta','sábado']
 let dados = carregar();
 let atualId = null;   // hábito aberto no detalhe
 let editandoId = null;
-let mesView = primeiroDoMes(new Date());
+let mesView = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
 
 const dlgForm = document.getElementById('dlgForm');
 const dlgAviso = document.getElementById('dlgAviso');
